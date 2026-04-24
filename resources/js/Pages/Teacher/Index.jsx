@@ -29,9 +29,6 @@ export default function Index ({ datas, groupData }) {
                             </tr>
                             </thead>
                                 <tbody className="divide-y divide-gray-200">
-                                {groupData === null && (
-                                    <div></div>
-                                )}
                                 {groupData.map((group) => 
                                     group.map((t, index) => (                                                                            
                                         <tr className="hover:bg-gray-100 transition-colors" key={t.id}>                                            
