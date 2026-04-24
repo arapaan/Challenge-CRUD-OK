@@ -20,19 +20,19 @@ export default function Index ({ datas }) {
                 <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg">
                         <div className="p-6 text-gray-900">
-                        <div class="overflow-x-auto">                        
-                        <table class="min-w-full divide-y divide-gray-200 bg-white">
-                            <thead class="bg-gray-50">
+                        <div className="overflow-x-auto">                        
+                        <table className="min-w-full divide-y divide-gray-200 bg-white">
+                            <thead className="bg-gray-50">
                             <tr>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">nama Kelas</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">nama Kelas</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>
                             </tr>
                             </thead>
-                                <tbody class="divide-y divide-gray-200">
+                                <tbody className="divide-y divide-gray-200">
                                 {datas.map((data) => (
-                                <tr class="hover:bg-gray-100 transition-colors">
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{data.name}</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">
+                                <tr className="hover:bg-gray-100 transition-colors">
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{data.name}</td>
+                                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">
                                         <Link rel="stylesheet" href={ route('grade.edit', data.id) } className='py-2 px-3 bg-blue-500 rounded-xl'>Edit</Link>
                                         <button onClick={() => deleteGrade(data.id)} className='py-2 px-3 bg-red-600 rounded-xl'>Hapus</button>
                                     </td>

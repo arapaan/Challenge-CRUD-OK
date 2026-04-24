@@ -27,21 +27,21 @@ export default function Edit({ errors, data, options }) {
                 <div className="mx-auto max-w-4xl sm:px-6 lg:px-8">
                     <div className="overflow-hidden bg-white shadow-2xl sm:rounded-lg">
                         <div className="p-6 text-gray-900">
-                            <div class="max-w-sm mx-auto p-4">
+                            <div className="max-w-sm mx-auto p-4">
                                 <form onSubmit={updateTeacher}>
                                     
                                     <div>
-                                        <label for="name" class="block text-sm font-medium text-gray-700">
+                                        <label for="name" className="block text-sm font-medium text-gray-700">
                                             Nama Siswa
                                         </label>
-                                        <div class="mt-1">
+                                        <div className="mt-1">
                                             <input 
                                             value={name}
                                             onChange={(e) => setName(e.target.value)}
                                             type="text" 
                                             name="name" 
                                             id="name" 
-                                            class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2.5 border" 
+                                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2.5 border" 
                                             placeholder="Massukan Nama Siswa"
                                             />
                                         </div>
@@ -53,7 +53,7 @@ export default function Edit({ errors, data, options }) {
                                     </div>
 
                                     <div>
-                                        <label for="grade" class="block text-sm mt-5 font-medium text-gray-700">
+                                        <label for="grade" className="block text-sm mt-5 font-medium text-gray-700">
                                             Kelas
                                         </label>
                                         

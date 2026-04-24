@@ -19,16 +19,16 @@ export default function Index ({ datas, groupData }) {
                 <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg">
                         <div className="p-6 text-gray-900">
-                        <div class="overflow-x-auto">                        
-                        <table class="min-w-full divide-y divide-gray-200 bg-white">
-                            <thead class="bg-gray-50">
+                        <div className="overflow-x-auto">                        
+                        <table className="min-w-full divide-y divide-gray-200 bg-white">
+                            <thead className="bg-gray-50">
                             <tr>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Kelas</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">nama Guru</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>                                
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Kelas</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">nama Guru</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>                                
                             </tr>
                             </thead>
-                                <tbody class="divide-y divide-gray-200">
+                                <tbody className="divide-y divide-gray-200">
                                 {groupData === null && (
                                     <div></div>
                                 )}
