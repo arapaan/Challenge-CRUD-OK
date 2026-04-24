@@ -45,11 +45,11 @@ class GradeController extends Controller
 
     public function update(CreateGradeRequest $request, Grade $grade)
     {
-        $grade->update([
+        $updated = $grade->update([
             'name' => $request->name,
         ]);
 
-        if(!$grade) {
+        if(!$updated) {
             return redirect()->route('grade.index')->with('error', 'Data gagal Diupdate!');
         }
 
@@ -58,9 +58,9 @@ class GradeController extends Controller
 
     public function destroy(Grade $grade)
     {
-        $grade->delete();
+        $deleted = $grade->delete();
 
-        if(!$grade) {
+        if(!$deleted) {
             return redirect()->route('grade.index')->with('error', 'Data gagal Dihapus!');
         }
 

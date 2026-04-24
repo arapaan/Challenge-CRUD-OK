@@ -52,7 +52,7 @@ class TeachersController extends Controller
 
     public function update(TeacherRequest $request, Teacher $teacher)
     {
-        $teacher->update([
+        $updated = $teacher->update([
             'name' => $request->name,
             'grade_id' => $request->grade_id
         ]);
@@ -66,9 +66,9 @@ class TeachersController extends Controller
 
     public function destroy(Teacher $teacher)
     {
-        $teacher->delete();
+        $deleted = $teacher->delete();
 
-        if(!$teacher) {
+        if(!$deleted) {
             return redirect()->route('teacher.index')->with('error', 'Data gagal Dihapus!');
         }
 

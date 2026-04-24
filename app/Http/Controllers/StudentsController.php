@@ -52,12 +52,12 @@ class StudentsController extends Controller
 
     public function update(StudentRequest $request, Student $student)
     {
-        $student->update([
+        $updated = $student->update([
             'name' => $request->name,
             'grade_id' => $request->grade_id
         ]);
 
-        if(!$student) {
+        if(!$updated) {
             return redirect()->route('student.index')->with('error', 'Data gagal Diupdate!');
         }
 
@@ -66,9 +66,9 @@ class StudentsController extends Controller
 
     public function destroy(Student $student)
     {
-        $student->delete();
+        $deleted = $student->delete();
 
-        if(!$student) {
+        if(!$deleted) {
             return redirect()->route('student.index')->with('error', 'Data gagal Dihapus!');
         }
 
