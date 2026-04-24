@@ -8,22 +8,7 @@ export default function Index ({ datas }) {
 
     return (
         <>                
-        <AuthenticatedLayout
-            header={
-                <h2 className="text-xl font-semibold leading-tight text-gray-800">
-                    Guru & Siswa
-                </h2>
-            }
-        >
-            <Head title="Combine" />            
-
-            {/* {message && (
-                <div className='flex justify-center items-center px-3 pt-5'>
-                    {message}
-                </div>
-            )} */}
-
-
+        <AuthenticatedLayout>            
             <div className="py-6">
                 <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg">

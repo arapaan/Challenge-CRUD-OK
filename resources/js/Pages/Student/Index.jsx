@@ -8,14 +8,7 @@ export default function Index ({ datas, groupData, flash }) {
     };    
     return (
         <>                
-        <AuthenticatedLayout
-            header={
-                <h2 className="text-xl font-semibold leading-tight text-gray-800">
-                    Siswa
-                </h2>
-            }
-        >
-            <Head title="Student" />                        
+        <AuthenticatedLayout>                        
 
             <div className='flex justify-start items-center px-3 pt-5'>
                 <Link href={ route('student.create') } className='bg-gray-900 rounded-lg py-2 px-3 text-white'>
