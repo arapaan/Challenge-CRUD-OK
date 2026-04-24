@@ -11,7 +11,6 @@ class StudentsController extends Controller
     public function index() {        
         $datas = Student::with('grade')->orderBy('grade_id', 'asc')->get();        
         $groupData = $datas->groupBy('grade.name')->values()->toArray(); 
-        // dd($groupData);
 
         return Inertia('Student/Index', [
             'datas' => $datas,
