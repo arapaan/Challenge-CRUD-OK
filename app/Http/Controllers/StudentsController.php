@@ -9,7 +9,8 @@ use App\Models\Student;
 class StudentsController extends Controller
 {
     public function index() {        
-        $datas = Student::with('grade')->orderBy('grade_id', 'asc')->get();        
+        $datas = Student::with(['grade', 'wali'])->orderBy('grade_id', 'asc')->get();        
+        // dd($datas);
         $groupData = $datas->groupBy('grade.name')->values()->toArray(); 
 
         return Inertia('Student/Index', [

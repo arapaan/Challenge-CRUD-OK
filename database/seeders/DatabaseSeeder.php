@@ -23,9 +23,10 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            GradeSeeder::class,
-            StudentSeeder::class,
-            TeacherSeeder::class,
+            // GradeSeeder::class,
+            // StudentSeeder::class,
+            // TeacherSeeder::class,
+            WaliSeeder::class,
         ]);
     }
 }

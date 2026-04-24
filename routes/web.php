@@ -5,6 +5,7 @@ use App\Http\Controllers\GradeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StudentsController;
 use App\Http\Controllers\TeachersController;
+use App\Http\Controllers\WaliController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -20,6 +21,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('grade', GradeController::class);
     Route::resource('student', StudentsController::class);
     Route::resource('teacher', TeachersController::class);
+    Route::resource('wali', WaliController::class);
     Route::get('combine', [CombineController::class, 'index'])->name('combine.index');
 });
 

@@ -25,8 +25,9 @@ export default function Index ({ datas, groupData, flash }) {
                         <table className="min-w-full divide-y divide-gray-200 bg-white">
                             <thead className="bg-gray-50">
                             <tr>
-                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">nama Siswa</th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Kelas</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">nama Siswa</th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">nama Wali</th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>
                             </tr>
                             </thead>
@@ -44,6 +45,9 @@ export default function Index ({ datas, groupData, flash }) {
                                             )}
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                                 {s.name}
+                                            </td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                                {s.wali?.name || 'asbhja'}
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">
                                                 <Link 

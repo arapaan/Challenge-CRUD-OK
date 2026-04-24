@@ -14,4 +14,9 @@ class Student extends Model
     public function grade() {
         return $this->belongsTo(Grade::class);
     }
+
+    public function wali()
+    {
+        return $this->hasOne(Wali::class);
+    }
 }
