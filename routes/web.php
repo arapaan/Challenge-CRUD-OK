@@ -5,7 +5,6 @@ use App\Http\Controllers\GradeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StudentsController;
 use App\Http\Controllers\TeachersController;
-use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
