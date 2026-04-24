@@ -37,7 +37,6 @@ class GradeController extends Controller
 
     public function edit(Grade $grade)
     {
-        // dd($grade->name);
         return inertia('Grade/Edit', [
             'data' => $grade,
         ]);
