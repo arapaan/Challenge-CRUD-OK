@@ -74,6 +74,6 @@ class WaliController extends Controller
             return redirect()->route('wali.index')->with('error', 'Data gagal Dihapus!');
         }
 
-        return redirect()->route('wali.index')->with('success', 'Data Berhasil Diupdate!');
+        return redirect()->route('wali.index')->with('success', 'Data Berhasil Dihapus!');
     }
 }

@@ -47,7 +47,7 @@ export default function Index ({ datas, groupData, flash }) {
                                                 {s.name}
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                                {s.wali?.name || 'asbhja'}
+                                                {s.wali?.name || ''}
                                             </td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">
                                                 <Link 
